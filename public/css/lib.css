@@ -1,0 +1,86 @@
+
+body{
+    
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+}
+header{
+    height: 10vh;
+    width: 100%;
+    background-color: #1B2430;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+header button{
+    height: 40px;
+    background-color: #B33030;
+    width: 70px;
+    margin-right: 15px;
+    border: none;
+    border-radius: 15px;
+    color: white;
+}
+main{
+    background-image: url(portada3.jpg);
+	background-repeat: no-repeat;
+	overflow: hidden;
+	background-size: cover;
+    min-height: 90vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+section{
+    min-height: 95vh;
+    width: 90%;
+    background-color: white;
+    margin-top: 20px;
+}
+
+.titulo{
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    color:#B33030;
+    border-bottom: black solid 2px;
+}
+.contenido{
+    margin-top: 20px;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.contenido .lib-cont{
+    margin-top: 20px;
+    height: 200px;
+    width: 350px;
+    background-color: white;
+    border: black solid 3px;
+    border-radius: 10px;
+    display: flex;
+}
+.img-lib{
+    width: 170px;
+}
+.cont{
+    height: 100%;
+    width: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.cont div{
+    height: 20px;
+    width: 100%;
+}
+.icon{
+    font-size: 20px;
+    color: #B33030;
+    margin-left: 80px;
+}

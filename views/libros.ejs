@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="resources/css/lib.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <a href="add_lib"><button>Add lib</button></a>
+        <a href="logout"><button>Salir</button></a>
+    </header>
+        <main>
+            <section>
+                <div class="titulo">
+                    <h2>ILIB biblioteca personal</h2>
+                </div>
+                <div class="contenido">
+                    <% results.forEach((libros)=>{ %>
+                        <div class="lib-cont">
+                            <img class="img-lib"src="resources/css/ptd.png" alt="">
+                            <div class="cont">
+                                <div>titulo: <br>
+                                    <%= libros.titulo %></div>
+                                <div>Autor: <br>
+                                    <%= libros.autor %></div>
+                                <div>Categoria: <br>
+                                    <%= libros.genero %></div>
+                                <div>Pag: <%= libros.paginas %> <i class="fa-solid fa-trash-can icon"></i></div>
+                        
+                            </div>
+                        </div>
+                    <% }) %>
+                </div>
+            </section>
+        </main>
+</body>
+</html>

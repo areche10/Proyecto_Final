@@ -1,0 +1,37 @@
+
+body{
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+}
+header{
+    height: 10vh;
+    width: 100%;
+    background-color: #1B2430;
+    color: white;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+main{
+    min-height: 90vh;
+    width: 100%;
+    background-color: #F1F1F1;
+}
+main .content{
+    height: 100%;
+    width: 100%;
+}
+main .content button{
+    height: 40px;
+    width: 200px;
+    color: #F1F1F1;
+    margin-left: 10px;
+    background-color: #B33030;
+    border-style: none;
+}
+
+h2{
+    margin: 10px;
+}

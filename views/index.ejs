@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="resources/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <% if (login) { %>                
+        <!-- <h1>Usuario conectado es: <strong><%= name %></strong></h1>                        
+        <a href="logout">Logout</a> -->
+        <header>ILIB biblioteca personal</header>
+        <main>
+            <h2>Bienbenido <strong><%= name %></strong></h2>
+            <div class="content">
+                <a href="libros"><button>Ir a biblioteca</button></a>
+                <a href="login"><button>Cerrar seccion</button></a>
+            </div>
+            
+        </main>
+    
+    <%} else { %>
+        <h1><strong><%= name %></strong></h1>   
+        <a href="login">Ir a Login</a>
+    <% } %>
+</body>
+
+
+<script src="resources/js/vanilla-tilt.min.js"></script>
+<script>
+    VanillaTilt.init(document.querySelectorAll(".box"), {
+    max: 25,
+    speed: 400
+});
+</script>
+</html>
